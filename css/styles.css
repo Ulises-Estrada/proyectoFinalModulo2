@@ -4,3 +4,17 @@ body {
   margin: 20px;
   background-color: #dda15e;
 }
+
+/* Selector de clase*/
+.class_selector {
+  font-size: 40px;
+  color: #9031d9;
+  font-weight: bold;
+}
+
+/* Selector de clase*/
+#id_selector {
+  font-size: 35px;
+  color: #15071f;
+  font-style: italic;
+}
