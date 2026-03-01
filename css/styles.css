@@ -44,3 +44,28 @@ li {
   color: #30054e;
   font-size: 20px;
 }
+
+.display_block {
+  margin: 10px 0 10px 0;
+  display: block;
+  background-color: #067391;
+}
+
+.display_inline {
+  margin: 25px 0 25px 0;
+  display: inline;
+  background-color: #171616;
+  color: aliceblue;
+}
+
+.display_inline_block {
+  margin: 25px 0 25px 0;
+  display: inline-block;
+  background-color: #902121;
+}
+
+.display_inline_block_2 {
+  margin: 25px 0 25px 0;
+  display: inline-block;
+  background-color: #9ba21b;
+}
