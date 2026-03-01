@@ -69,3 +69,42 @@ li {
   display: inline-block;
   background-color: #9ba21b;
 }
+
+.pseudo_hover {
+  background-color: rgb(158, 19, 151);
+  color: #ffffff;
+  border-radius: 15px;
+  border: 2px solid #a7c957;
+  font-size: 20px;
+  padding: 25px 10px 25px 10px;
+}
+
+.pseudo_hover:hover {
+  background-color: #62c957;
+  color: #14301a;
+  border: 2px solid #2dcbc4;
+  font-size: 20px;
+}
+
+.pseudo_focus {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #262e57;
+}
+
+.pseudo_focus:focus {
+  background-color: #7ee065;
+  border: 2px solid #78240a;
+}
+
+.pseudo_active {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #16106b;
+  background-color: rgba(88, 182, 97, 0.5);
+}
+
+.pseudo_active:active {
+  background-color: #971616;
+  border: 2px solid #110f0f;
+}
