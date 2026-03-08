@@ -153,12 +153,27 @@ vw (viewport width, porcentaje del ancho de la ventana),
 vh (viewport height, porcentaje de la altura de la ventana) */
 
 .card {
+  /* Posicionamiento */
+  /*position: static; /* el elemento se posiciona de forma normal en el flujo del documento, este es el valor por defecto */
+  /*position: relative; /* el elemento se posiciona de forma relativa a su posición normal, 
+    se pueden usar las propiedades top, right, bottom y left para mover el elemento desde su posición normal */
+  position: absolute; /* el elemento se posiciona de forma absoluta respecto a su primer ancestro posicionado (que no sea static), 
+    si no hay ningún ancestro posicionado, se posiciona respecto al documento */
+  /*position: fixed; /* el elemento se posiciona de forma fija respecto a la ventana del navegador,
+    se pueden usar las propiedades top, right, bottom y left para mover el elemento desde su posición fija */
+  top: 200px;
+  right: 20px;
   width: 600px;
   background-color: #ebdbf2;
   border-radius: 15px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: bold;
   display: inline-block;
   margin: 10px;
   border: blue solid 5px;
+  color: #0b0a0a !important;
+  text-align: center;
   /* margin-top: 20px;
   margin-bottom: 30px;
   margin-left: 15px;
@@ -189,4 +204,31 @@ vh (viewport height, porcentaje de la altura de la ventana) */
   text-align: justify; /* el valor important hace que esta propiedad tenga prioridad sobre cualquier otra propiedad que se le asigne al mismo elemento */
   font-size: 20px;
   color: #08067a;
+}
+
+.letras-pixeles {
+  font-family: "Bitcount Grid Double Ink", sans-serif !important;
+}
+
+/*
+.whatsapp {
+  background-color: transparent;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+  */
+.whatsapp_image {
+  width: 50px;
+  cursor: pointer;
+}
+
+/* ejemplo de whatsapp_image sticky */
+/* sticky es una mezcla entre relative y fixed, y como su nombre lo indica, 
+el elemento se pega a su posición original hasta que se alcanza un punto específico en la página,
+ y luego se comporta como fixed */
+.whatsapp {
+  background-color: transparent;
+  position: sticky;
+  top: 0px;
 }
