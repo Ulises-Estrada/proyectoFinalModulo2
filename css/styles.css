@@ -1,6 +1,5 @@
 * {
   font-family: Arial, sans-serif;
-  margin: 20px;
 }
 
 body {
@@ -231,4 +230,124 @@ el elemento se pega a su posici√≥n original hasta que se alcanza un punto espec√
   background-color: transparent;
   position: sticky;
   top: 0px;
+}
+
+/* =========================
+   MENU FIJO (MEJORA NAVBAR)
+========================= */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Para evitar que el contenido quede oculto */
+main {
+  margin-top: 100px;
+}
+
+/* =========================
+   MODAL
+========================= */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  display: none;
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: 2000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.open-modal-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  z-index: 1500;
+}
+
+/* =========================
+   STICKY NOTE
+========================= */
+.sticky-note {
+  position: sticky;
+  top: 80px;
+  background: yellow;
+  padding: 10px;
+  z-index: 500;
+}
+
+/* =========================
+   Z-INDEX EJEMPLO
+========================= */
+.zindex-section {
+  position: relative;
+  height: 300px;
+  margin-top: 50px;
+}
+
+.box {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  background: red;
+  top: 50px;
+  left: 50px;
+  z-index: 2;
+}
+
+.box2 {
+  background: blue;
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+}
+
+/* =========================
+   FLEXBOX + POSITION
+========================= */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background: #0077b6;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* elemento destacado usando position */
+.destacado {
+  position: relative;
+  top: -20px;
+  background: orange;
+  z-index: 10;
 }
