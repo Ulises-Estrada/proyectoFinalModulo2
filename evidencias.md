@@ -10,6 +10,8 @@
 
 [Captura de Settings → Pages mostrando la URL activa.](img/settings_pages.jpg)
 
+[Historial de commits](img/historial_commits.jpg)
+
 ## 📚 Aprendizajes
 
 ### 1. ¿Qué fue lo más fácil y lo más retador del proyecto?
