@@ -351,3 +351,182 @@ main {
   background: orange;
   z-index: 10;
 }
+
+/* ===== RESET BÁSICO ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+#main-content {
+  padding: 15px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-links li {
+  margin: 10px 0;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+/* ===== SECCIONES ===== */
+section {
+  margin: 20px 0;
+}
+
+/* ===== CARD ===== */
+.card {
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* ===== FLEX CONTAINER ===== */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ===== Z-INDEX SECTION ===== */
+.zindex-section {
+  position: relative;
+  height: 150px;
+}
+
+/* ===== BOTÓN MODAL ===== */
+.open-modal-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+
+  /* NAVBAR */
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  /* FLEXBOX */
+  .flex-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  /* CARD */
+  .card {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  /* CONTENIDO */
+  #main-content {
+    padding: 30px;
+  }
+
+  /* BOTÓN */
+  .open-modal-btn {
+    width: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  /* LAYOUT GENERAL */
+  #main-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+  }
+
+  /* FLEXBOX */
+  .flex-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .item {
+    flex: 1;
+    text-align: center;
+  }
+
+  /* CARDS */
+  .card {
+    width: 50%;
+    margin: 30px auto;
+  }
+
+  /* Z-INDEX VISUAL MEJORADO */
+  .box1 {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .box2 {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    z-index: 2;
+  }
+
+  /* BOTÓN */
+  .open-modal-btn {
+    width: auto;
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    background-color: #f8f9fa;
+  }
+}

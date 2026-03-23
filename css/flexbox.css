@@ -4,7 +4,9 @@
 }
 
 body {
-  background-color: #a4ac86;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
 }
 
 h1 {
@@ -62,4 +64,44 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center; /* alinea los items en el eje horizontal */
+}
+
+/* ===== TABLETS ===== */
+@media (min-width: 600px) and (max-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .container2 {
+    flex-direction: row;
+  }
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    background-color: #eaeaea;
+  }
 }

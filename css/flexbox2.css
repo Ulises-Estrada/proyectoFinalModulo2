@@ -4,13 +4,17 @@
 }
 
 body {
-  background-color: #e4c1f9;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
 }
 
-main {
-  display: flex;
-  background-color: aliceblue;
+/* Contenido principal */
+#main-content {
+  width: 100%;
+  padding: 15px;
 }
+
 header {
   background-color: #eff37e;
 }
@@ -20,9 +24,9 @@ section {
   background-color: #288e16;
 }
 
-aside {
-  flex: 1;
-  background-color: #991092;
+/* Sidebar oculto en móviles */
+.sidebar {
+  display: none;
 }
 
 footer {
@@ -51,10 +55,8 @@ button:hover {
 
 /* Flex-wrap: permite que los items se envuelvan a la siguiente línea si no caben en una sola línea */
 .container {
-  background-color: aquamarine;
   display: flex;
-  flex-wrap: wrap-reverse;
-  gap: 10px; /* espacio entre los items */
+  flex-direction: column;
 }
 
 .box {
@@ -62,4 +64,53 @@ button:hover {
   padding: 20px;
   margin: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== TABLETS ===== */
+@media (min-width: 600px) and (max-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    display: block;
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 10px;
+  }
+
+  .main-content {
+    width: 70%;
+  }
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .sidebar {
+    width: 25%;
+  }
+
+  .main-content {
+    width: 75%;
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    background-color: #eaeaea;
+  }
 }
